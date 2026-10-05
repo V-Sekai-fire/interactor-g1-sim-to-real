@@ -1,0 +1,31 @@
+# Every Python file compiles and every MJCF parses; the training stack needs a GPU and runs on a desk.
+name: checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Python compiles
+        run: python -m compileall -q .
+      - name: MJCF parses
+        run: |
+          python - <<'PY'
+          import glob, sys, xml.etree.ElementTree as ET
+          files = sorted(glob.glob("*.xml"))
+          for f in files:
+              root = ET.parse(f).getroot()
+              assert root.tag == "mujoco", f"{f}: root is {root.tag}"
+          print(f"{len(files)} MJCF files parse")
+          assert files, "no MJCF files found"
+          PY

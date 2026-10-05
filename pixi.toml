@@ -43,7 +43,7 @@ drjit = "==1.5.0"
 
 # --- parametric body model (identity axis) ---
 # Editable checkout from the manifest; not on PyPI.
-anny = { path = "../../anny", editable = true }
+anny = { path = "../anny", editable = true }
 
 # --- coordination store reader ---
 cbor2 = ">=6.1,<7"
