@@ -1,4 +1,4 @@
-"""The flat velocity task on the G1 at 50 Hz with the ROM terms (RFD 2238).
+"""The flat velocity task on the G1 at 50 Hz with the ROM terms (RFD66606-2238).
 
 Everything not named here is mjlab's own flat G1 velocity configuration. The
 observation is mjlab's actor group as it stands (joint positions and velocities,

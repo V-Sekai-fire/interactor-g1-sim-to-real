@@ -1,5 +1,5 @@
 """Roll the policy out over command sweeps and seeds and record every frame
-(RFD 2238): the body's PPO corpus, microduck's `--save-csv` done as data.
+(RFD66606-2238): the body's PPO corpus, microduck's `--save-csv` done as data.
 
     pixi run rollouts --checkpoint logs/.../model_299.pt --seeds 8 --envs 64 --steps 1000
 

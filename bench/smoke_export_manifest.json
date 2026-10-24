@@ -30,5 +30,5 @@
   "envelope_sha256": "082058825772f411758ddc264b2b6962a648424351bd97a080e636c249bea3a2",
   "onnx_sha256": "adc7525f54a8e7805e55d94e3a5b807712f6c22bcdfa2cf4fa12dc6ac0a26c0b",
   "published": false,
-  "note": "a smoke export; no policy ships before the obs_dim, K_max and ROM rulings (RFD 2238)"
+  "note": "a smoke export; no policy ships before the obs_dim, K_max and ROM rulings (RFD66606-2238)"
 }

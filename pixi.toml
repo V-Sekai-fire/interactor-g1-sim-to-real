@@ -48,7 +48,7 @@ anny = { path = "../anny", editable = true }
 # --- coordination store reader ---
 cbor2 = ">=6.1,<7"
 
-# --- the G1 sim-to-real task family (RFD 2238): the microduck layout on mjlab ---
+# --- the G1 sim-to-real task family (RFD66606-2238): the microduck layout on mjlab ---
 mjlab-motionbricks = { path = "motionbricks_task", editable = true }
 # the E.3 refetch reads the appendix dataset
 datasets = ">=3,<5"
