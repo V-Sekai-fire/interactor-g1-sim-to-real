@@ -1,4 +1,4 @@
-"""The smoke run (RFD 2238): train a few hundred iterations, roll the policy out with
+"""The smoke run (RFD66606-2238): train a few hundred iterations, roll the policy out with
 the ROM clearance logged, run the shifted-envelope negative control, export, and
 write the record. A smoke policy is pipeline validation, not a gait; nothing here
 is published.

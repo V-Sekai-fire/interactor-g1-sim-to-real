@@ -1,4 +1,4 @@
-"""The roll-out recorder (RFD 2238): every control step of every environment, as
+"""The roll-out recorder (RFD66606-2238): every control step of every environment, as
 ETNF parquet shards.
 
 `frames` is the wide table: one row per env per step with the actor observation,

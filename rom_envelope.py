@@ -1,4 +1,4 @@
-"""The eight-joint E.3 envelope on the G1 as one artefact on disk (RFD 2238).
+"""The eight-joint E.3 envelope on the G1 as one artefact on disk (RFD66606-2238).
 
 SPDX-License-Identifier: Apache-2.0
 

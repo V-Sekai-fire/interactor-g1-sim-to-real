@@ -4,7 +4,7 @@ The G1 humanoid sim-to-real environment: a MuJoCo rig, its joint-range envelope,
 
 ## What it is for
 
-It trains and checks locomotion policies for the G1 robot model before anything runs on hardware. The task family, the range-of-motion calibration, the convex hull pipeline and the policy export live here. RFD 2238 owns the design, and RFD 2276 builds on it.
+It trains and checks locomotion policies for the G1 robot model before anything runs on hardware. The task family, the range-of-motion calibration, the convex hull pipeline and the policy export live here. RFD66606-2238 owns the design, and RFD66606-2276 builds on it.
 
 ## Build and run
 
